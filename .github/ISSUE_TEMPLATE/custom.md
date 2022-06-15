@@ -1,6 +1,9 @@
 ---
-Name: GMAGAO-X Risk Template
-Purpose: Document risk items and list of planned mitigations.
+name: GMAGAO-X Risk Template
+about: Document risk items and list of planned mitigations.
+title: ''
+labels: ''
+assignees: ''
 
 ---
 **Risk creation date:**  
