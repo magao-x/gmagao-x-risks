@@ -1,0 +1,15 @@
+name:  Risk Item
+description: GMAGAO-X Risk
+title: "[Risk]: "
+labels: "risk"
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please capture all details needed to characterize the risk and its mitigations.
+- type: textarea
+  attributes: 
+    label: Risk Statement
+    description: Provide an If...Then... statement for the risk
+    placeholder:  If Jack and Jill go up the hill and Jack falls down, then Jill comes tumbling after.
+    
