@@ -12,4 +12,16 @@ body:
     label: Risk Statement
     description: Provide an If...Then... statement for the risk
     placeholder:  If Jack and Jill go up the hill and Jack falls down, then Jill comes tumbling after.
+- type: dropdown
+  id: download
+  attributes:
+    label: What is the likelihood of occurrence:
+    options:
+      - Very low (<1%)
+      - Low (1-10%)
+      - Medium (10-20%)
+      - High (20-40%)
+      - Very High (>40%)
+  validations:
+    required: true
     
