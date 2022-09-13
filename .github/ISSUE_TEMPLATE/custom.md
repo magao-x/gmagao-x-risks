@@ -1,5 +1,5 @@
 ---
-name: GMAGAO-X Risk Template
+name: GMAGAO-X Risk Template (in markdown language)
 about: Document risk items and list of planned mitigations.
 title: ''
 labels: ''
