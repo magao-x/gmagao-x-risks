@@ -6,50 +6,45 @@ labels: "risk"
 body:
 
 - type: input
-  id: creation_date
   attributes:
     label: "Risk creation date:"
     
 - type: input
-  id: last_modified
   attributes:
     label: "Last modified:"
     
 - type: dropdown
-    id: risk_type
-    attributes:
-      label: "Risk Type:"
-      options:
-        - Technical
-        - Schedule
-        - Cost
-        - Safety
+  attributes:
+    label: "Risk Type:"
+    options:
+      - Technical
+      - Schedule
+      - Cost
+      - Safety
         
 - type: dropdown
-    id: risk_approach
-    attributes:
-      label: "Risk Approach:"
-      options:
-        - Mitigate
-        - Watch
-        - Accept (with residual risk)
-        - Close (with no residual risk)
-        - Reject
-        - Candidate risk
+  attributes:
+    label: "Risk Approach:"
+    options:
+      - Mitigate
+      - Watch
+      - Accept (with residual risk)
+      - Close (with no residual risk)
+      - Reject
+      - Candidate risk
         
 - type: dropdown
-      id: risk_owner
-      attributes:
-        label: "Risk Owner:"
-        options:
-          - Doug Kelly
-          - Jared Males
-          - Sebastiaan Haffert
-          - Laird Close
-          - Fernando Coronado
-          - Oli Durney
-          - Victor Gasho
-          - Olivier Guyon
+  attributes:
+    label: "Risk Owner:"
+    options:
+      - Doug Kelly
+      - Jared Males
+      - Sebastiaan Haffert
+      - Laird Close
+      - Fernando Coronado
+      - Oli Durney
+      - Victor Gasho
+      - Olivier Guyon
 
 - type: markdown
   attributes:
@@ -68,70 +63,64 @@ body:
     description: Describe what would happen if the risk were realized
 
 - type: dropdown
-  id: initial_likelihood
   attributes:
-     label: "Initial Risk Likelihood:"
-     options: 
-       - very low (<2%)
-       - low (2-15%)
-       - moderate (15-25%)
-       - high (25-50%)
-       - very high (>50%)
+    label: "Initial Risk Likelihood:"
+    options: 
+      - very low (<2%)
+      - low (2-15%)
+      - moderate (15-25%)
+      - high (25-50%)
+      - very high (>50%)
 
 - type: dropdown
-  id: initial_consequence
   attributes:
-     label: "Initial Risk Consequence:"
-     options: 
-       - very low (negligible impact)
-       - low (decrease in margins)
-       - moderate (major loss of capability)
-       - high (loss of one or more level-1 reqs)
-       - very high (loss of instrument or mission)
+    label: "Initial Risk Consequence:"
+    options: 
+      - very low (negligible impact)
+      - low (decrease in margins)
+      - moderate (major loss of capability)
+      - high (loss of one or more level-1 reqs)
+      - very high (loss of instrument or mission)
 
 - type: dropdown
-  id: current_likelihood
   attributes:
-     label: "Current Risk Likelihood:"
-     options: 
-       - very low (<2%)
-       - low (2-15%)
-       - moderate (15-25%)
-       - high (25-50%)
-       - very high (>50%)
+    label: "Current Risk Likelihood:"
+    options: 
+      - very low (<2%)
+      - low (2-15%)
+      - moderate (15-25%)
+      - high (25-50%)
+      - very high (>50%)
 
 - type: dropdown
-  id: current_consequence
   attributes:
-     label: "Current Risk Consequence:"
-     options: 
-       - very low (negligible impact)
-       - low (decrease in margins)
-       - moderate (major loss of capability)
-       - high (loss of one or more level-1 reqs)
-       - very high (loss of instrument or mission)
+    label: "Current Risk Consequence:"
+    options: 
+      - very low (negligible impact)
+      - low (decrease in margins)
+      - moderate (major loss of capability)
+      - high (loss of one or more level-1 reqs)
+      - very high (loss of instrument or mission)
 
 - type: dropdown
-  id: target_likelihood
   attributes:
-     label: "Target Risk Likelihood:"
-     options: 
-       - very low (<2%)
-       - low (2-15%)
-       - moderate (15-25%)
-       - high (25-50%)
-       - very high (>50%)
+    label: "Target Risk Likelihood:"
+    options: 
+      - very low (<2%)
+      - low (2-15%)
+      - moderate (15-25%)
+      - high (25-50%)
+      - very high (>50%)
 
 - type: dropdown
-  id: target_consequence
   attributes:
-     label: "Target Risk Consequence:"
-     options: 
-       - very low (negligible impact)
-       - low (decrease in margins)
-       - moderate (major loss of capability)
-       - high (loss of one or more level-1 reqs)
-       - very high (loss of instrument or mission)
+    label: "Target Risk Consequence:"
+    options: 
+      - very low (negligible impact)
+      - low (decrease in margins)
+      - moderate (major loss of capability)
+      - high (loss of one or more level-1 reqs)
+      - very high (loss of instrument or mission)
        
 - type: textarea
   attributes: 
