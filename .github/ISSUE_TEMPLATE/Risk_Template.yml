@@ -2,6 +2,45 @@ name:  Risk Item
 description: GMAGAO-X Risk
 title: "[Risk]: "
 labels: "risk"
+---
+body:
+- Risk creation date:
+  Last modified:
+  Risk type:
+  - type: dropdown
+      id: risk type
+      attributes:
+        options:
+          - Technical
+          - Schedule
+          - Cost
+          - Safety
+  Risk approach:
+  - type: dropdown
+      id: risk approach
+      attributes:
+        options:
+          - Mitigate
+          - Watch
+          - Accept (with residual risk)
+          - Close (with no residual risk)
+          - Reject
+          - Candidate risk
+  Risk owner:
+  - type: dropdown
+      id: risk owner
+      attributes:
+        options:
+          - Doug Kelly
+          - Jared Males
+          - Sebastiaan Haffert
+          - Laird Close
+          - Fernando Coronado
+          - Oli Durney
+          - Victor Gasho
+          - Olivier Guyon
+---
+
 body:
 - type: markdown
   attributes:
@@ -9,7 +48,39 @@ body:
       Please capture all details needed to characterize the risk and its mitigations.
 - type: textarea
   attributes: 
-    label: Risk Statement
+    label: Risk Statement:
     description: Provide an If...Then... statement for the risk
     placeholder:  If Jack and Jill go up the hill and Jack falls down, then Jill comes tumbling after.
-    
+- type: textarea
+  attributes: 
+    label: Risk Effects:
+    description: Describe what would happen if the risk were realized
+    placeholder:  ''
+- type: textarea
+  attributes:
+     label: Risk Assessment:
+     tables:
+       name: Risk assessment table
+       data:
+       - Risk Ratings: Initial
+         Likelihood:  2-low
+         Consequence:  4-high
+       - Risk Ratings: Current
+         Likelihood:  2-low
+         Consequence:  4-high
+       - Risk Ratings: Target
+         Likelihood:  0-Nil
+         Consequence: 3-medium
+- type: textarea
+  attributes: 
+    label: Initial Risk Notes:
+    description: ''
+    placeholder: ''
+- type: textarea
+  attributes:
+    label: Estimated cost if risk is realized:
+  attributes:
+    label: Explanation for cost risk:
+- type: textarea
+  attributes:
+    label: Risk mitigation list:
