@@ -2,23 +2,29 @@ name:  Risk Item
 description: GMAGAO-X Risk
 title: "[Risk]: "
 labels: "risk"
----
+
 body:
-- Risk creation date:
-  Last modified:
-  Risk type:
+- type: input
+  id: creation_date
+  attributes:
+    label: Risk creation date
+- type: input
+  id: last_modified
+  attributes:
+    label: Last modified
   - type: dropdown
-      id: risk type
+      id: risk_type
       attributes:
+        label: "Risk Type:"
         options:
           - Technical
           - Schedule
           - Cost
           - Safety
-  Risk approach:
   - type: dropdown
-      id: risk approach
+      id: risk_approach
       attributes:
+        label: "Risk Approach:"
         options:
           - Mitigate
           - Watch
@@ -26,10 +32,10 @@ body:
           - Close (with no residual risk)
           - Reject
           - Candidate risk
-  Risk owner:
   - type: dropdown
-      id: risk owner
+      id: risk_owner
       attributes:
+        label: "Risk Owner:"
         options:
           - Doug Kelly
           - Jared Males
@@ -39,48 +45,95 @@ body:
           - Oli Durney
           - Victor Gasho
           - Olivier Guyon
----
 
-body:
 - type: markdown
   attributes:
     value: |
       Please capture all details needed to characterize the risk and its mitigations.
 - type: textarea
   attributes: 
-    label: Risk Statement:
+    label: "Risk Statement:"
     description: Provide an If...Then... statement for the risk
     placeholder:  If Jack and Jill go up the hill and Jack falls down, then Jill comes tumbling after.
 - type: textarea
   attributes: 
-    label: Risk Effects:
+    label: "Risk Effects:"
     description: Describe what would happen if the risk were realized
-    placeholder:  ''
-- type: textarea
+- type: dropdown
+  id: initial_likelihood
   attributes:
-     label: Risk Assessment:
-     tables:
-       name: Risk assessment table
-       data:
-       - Risk Ratings: Initial
-         Likelihood:  2-low
-         Consequence:  4-high
-       - Risk Ratings: Current
-         Likelihood:  2-low
-         Consequence:  4-high
-       - Risk Ratings: Target
-         Likelihood:  0-Nil
-         Consequence: 3-medium
+     label: "Initial Risk Likelihood:"
+     options: 
+       - very low (<2%)
+       - low (2-15%)
+       - moderate (15-25%)
+       - high (25-50%)
+       - very high (>50%)
+- type: dropdown
+  id: initial_consequence
+  attributes:
+     label: "Initial Risk Consequence:"
+     options: 
+       - very low (negligible impact)
+       - low (decrease in margins)
+       - moderate (major loss of capability)
+       - high (loss of one or more level-1 reqs)
+       - very high (loss of instrument or mission)
+- type: dropdown
+  id: current_likelihood
+  attributes:
+     label: "Current Risk Likelihood:"
+     options: 
+       - very low (<2%)
+       - low (2-15%)
+       - moderate (15-25%)
+       - high (25-50%)
+       - very high (>50%)
+- type: dropdown
+  id: current_consequence
+  attributes:
+     label: "Current Risk Consequence:"
+     options: 
+       - very low (negligible impact)
+       - low (decrease in margins)
+       - moderate (major loss of capability)
+       - high (loss of one or more level-1 reqs)
+       - very high (loss of instrument or mission)
+- type: dropdown
+  id: target_likelihood
+  attributes:
+     label: "Target Risk Likelihood:"
+     options: 
+       - very low (<2%)
+       - low (2-15%)
+       - moderate (15-25%)
+       - high (25-50%)
+       - very high (>50%)
+- type: dropdown
+  id: target_consequence
+  attributes:
+     label: "Target Risk Consequence:"
+     options: 
+       - very low (negligible impact)
+       - low (decrease in margins)
+       - moderate (major loss of capability)
+       - high (loss of one or more level-1 reqs)
+       - very high (loss of instrument or mission)
+       
 - type: textarea
   attributes: 
-    label: Initial Risk Notes:
-    description: ''
-    placeholder: ''
+    label: "Initial Risk Notes:"
 - type: textarea
   attributes:
-    label: Estimated cost if risk is realized:
-  attributes:
-    label: Explanation for cost risk:
+    label: "Estimated cost if risk is realized:"
 - type: textarea
   attributes:
-    label: Risk mitigation list:
+    label: "Explanation for cost risk:"
+- type: textarea
+  attributes:
+    label: "Risk mitigation list:"
+    value:
+      1.
+      2.
+      3.
+      4.
