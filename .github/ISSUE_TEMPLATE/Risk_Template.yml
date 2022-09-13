@@ -4,35 +4,40 @@ title: "[Risk]: "
 labels: "risk"
 
 body:
+
 - type: input
   id: creation_date
   attributes:
-    label: Risk creation date
+    label: "Risk creation date:"
+    
 - type: input
   id: last_modified
   attributes:
-    label: Last modified
-  - type: dropdown
-      id: risk_type
-      attributes:
-        label: "Risk Type:"
-        options:
-          - Technical
-          - Schedule
-          - Cost
-          - Safety
-  - type: dropdown
-      id: risk_approach
-      attributes:
-        label: "Risk Approach:"
-        options:
-          - Mitigate
-          - Watch
-          - Accept (with residual risk)
-          - Close (with no residual risk)
-          - Reject
-          - Candidate risk
-  - type: dropdown
+    label: "Last modified:"
+    
+- type: dropdown
+    id: risk_type
+    attributes:
+      label: "Risk Type:"
+      options:
+        - Technical
+        - Schedule
+        - Cost
+        - Safety
+        
+- type: dropdown
+    id: risk_approach
+    attributes:
+      label: "Risk Approach:"
+      options:
+        - Mitigate
+        - Watch
+        - Accept (with residual risk)
+        - Close (with no residual risk)
+        - Reject
+        - Candidate risk
+        
+- type: dropdown
       id: risk_owner
       attributes:
         label: "Risk Owner:"
@@ -50,15 +55,18 @@ body:
   attributes:
     value: |
       Please capture all details needed to characterize the risk and its mitigations.
+
 - type: textarea
   attributes: 
     label: "Risk Statement:"
     description: Provide an If...Then... statement for the risk
     placeholder:  If Jack and Jill go up the hill and Jack falls down, then Jill comes tumbling after.
+
 - type: textarea
   attributes: 
     label: "Risk Effects:"
     description: Describe what would happen if the risk were realized
+
 - type: dropdown
   id: initial_likelihood
   attributes:
@@ -69,6 +77,7 @@ body:
        - moderate (15-25%)
        - high (25-50%)
        - very high (>50%)
+
 - type: dropdown
   id: initial_consequence
   attributes:
@@ -79,6 +88,7 @@ body:
        - moderate (major loss of capability)
        - high (loss of one or more level-1 reqs)
        - very high (loss of instrument or mission)
+
 - type: dropdown
   id: current_likelihood
   attributes:
@@ -89,6 +99,7 @@ body:
        - moderate (15-25%)
        - high (25-50%)
        - very high (>50%)
+
 - type: dropdown
   id: current_consequence
   attributes:
@@ -99,6 +110,7 @@ body:
        - moderate (major loss of capability)
        - high (loss of one or more level-1 reqs)
        - very high (loss of instrument or mission)
+
 - type: dropdown
   id: target_likelihood
   attributes:
@@ -109,6 +121,7 @@ body:
        - moderate (15-25%)
        - high (25-50%)
        - very high (>50%)
+
 - type: dropdown
   id: target_consequence
   attributes:
@@ -123,12 +136,15 @@ body:
 - type: textarea
   attributes: 
     label: "Initial Risk Notes:"
+
 - type: textarea
   attributes:
     label: "Estimated cost if risk is realized:"
+
 - type: textarea
   attributes:
     label: "Explanation for cost risk:"
+
 - type: textarea
   attributes:
     label: "Risk mitigation list:"
