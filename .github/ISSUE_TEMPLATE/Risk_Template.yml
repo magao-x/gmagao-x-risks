@@ -146,8 +146,8 @@ body:
 - type: markdown
   attributes:
     value: |
-      - [] Mitigation #1
-      - [] Mitigation #2
-      - [] Mitigation #3
-      - [] Mitigation #4
+      - [ ] Mitigation #1
+      - [ ] Mitigation #2
+      - [ ] Mitigation #3
+      - [ ] Mitigation #4
 
