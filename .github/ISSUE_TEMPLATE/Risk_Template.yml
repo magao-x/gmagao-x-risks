@@ -142,3 +142,12 @@ body:
       2.
       3.
       4.
+
+- type: markdown
+  attributes:
+    value: |
+      - [] Mitigation #1
+      - [] Mitigation #2
+      - [] Mitigation #3
+      - [] Mitigation #4
+
