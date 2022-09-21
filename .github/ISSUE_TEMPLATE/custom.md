@@ -1,8 +1,9 @@
 ---
 name: GMAGAO-X Risk Template (in markdown language)
 about: Document risk items and list of planned mitigations.
-<!-- Enter the risk title on the following line, between the apostraphes. Fill in the following lines as desired. -->
-<!-- The risk owner is specified later. -->
+
+<!-- Enter the risk title on the following line, between the apostrophes. Fill in the following lines as desired. The risk owner is specified later. -->
+
 title: ''
 labels: 'Risk'
 assignees: ''
@@ -10,13 +11,19 @@ assignees: ''
 ---
 
 **Risk creation date:**  
+
 <!-- Enter date after the **. Follow this same approach for subsequent entries in this form. -->
+
 **Last Modified:** 
 
 **Risk type:**    
+
 <!-- Risk types include:  Technical, Cost, Schedule, Safety -->
+
 **Risk Approach:** 
+
 <!-- Risk approaches include: Mitigate, Watch, Candidate, Reject, Accept (with residual risk), Close (with no residual risk) -->
+
 **Risk Owner:** 
 
 # **Risk Statement:**
@@ -34,6 +41,7 @@ assignees: ''
 | Initial      |   |   |
 | Current      |   |   |
 | Target       |   |   |
+
 <!-- Provide initial, current, and target risk rankings in the gaps between the brackets.  Levels include:  0-Nil,1-Very low, 2-Low, 3-Moderate, 4-High, 5-Very High, and Risk Realized -->
 <!-- Risk likelihood ratings are assigned as follows: -->
 <!-- Likelihood |  Safety     |  Technical  |  Cost/Schedule  | -->
@@ -75,6 +83,7 @@ assignees: ''
 **Explanation for cost risk:**
 
 # **Risk mitigation list:**
+
 <!-- Create as many mitigations as needed by typing in the mitigations after the [ ].  Once the risk is created, we can generate separate issues for each of these mitigations.  This risk form will serve as the place for tracking the completion of mitigations. If a mitigation issue is closed, a green checkmark should appear next to that item.  You can also mark an issue as closed by putting an X between the two brackets. -->  
 
 - [ ]
