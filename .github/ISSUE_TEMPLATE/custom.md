@@ -2,8 +2,6 @@
 name: GMAGAO-X Risk Template (in markdown language)
 about: Document risk items and list of planned mitigations.
 
-<!-- Enter the risk title on the following line, between the apostrophes. Fill in the following lines as desired. The risk owner is specified later. -->
-
 title: ''
 labels: 'Risk'
 assignees: ''
