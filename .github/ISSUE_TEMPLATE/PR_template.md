@@ -1,93 +1,64 @@
 ---
-name: GMAGAO-X Risk Template (in markdown language)
-about: Document risk items and list of planned mitigations.
-
+name: GMAGAO-X PR/PFR Report
+PR/PFR: ''
 title: ''
-labels: 'Risk'
-assignees: ''
 
 ---
+<!-- Once the issue is created, the creator should add a PR or PFR label -->
+<!-- The creator should assign one or more people to the PR/PFR -->
+<!-- The creator should add labels, as discussed below -->
+<!-- The creator should consider adding a milestone for resolution of the problem -->
 
-**Risk creation date:**  
+# **Full Description:**  
 
-<!-- Enter date after the **. Follow this same approach for subsequent entries in this form. -->
+**Problem Description:**
+<!-- Enter text after the **. Provide the following information: -->
+<!-- Problem description -->
+<!-- Details of the incident -->
+<!--    Date/Time of incident -->
+<!--    Operators -->
+<!--    Hardware involved -->
+<!--    Instrument configuration -->
+<!--    Relevant environmental conditions -->
+<!--    Details of what happened/what was observed -->
+<!-- Impact of issue -->
 
-**Last Modified:** 
+**Safety Assessment/Workarounds:**
 
-**Risk type:**    
+<!-- Do we want to operate before this is fixed? -->
+<!-- Is it safe to do so? -->
+<!-- What are the workarounds that allow us to continue? -->
 
-<!-- Risk types include:  Technical, Cost, Schedule, Safety -->
+**Initial Thoughts on Possible Solutions:**    
 
-**Risk Approach:** 
+**Affected Systems:**
 
-<!-- Risk approaches include: Mitigate, Watch, Candidate, Reject, Accept (with residual risk), Close (with no residual risk) -->
+<!-- Type in affected systems and subsystems here and add a label for the system -->
 
-**Risk Owner:** 
+**Priority:**
 
-# **Risk Statement:**
+<!-- Low, Moderate, High, Very High, Extreme Priority -->
+<!-- If the priority is high or greater, the operator should add a label to the issue -->
 
-<!-- Write a risk statement in an If...then... format.  Start on the line after the risk statement header. -->
+# **Resolution Info:**
 
-# **Risk Effects:**
+<!-- The resolution should discuss some of the following.  The discussion should scale with the significance of the problem.  Major PFRs should address all of the following. -->
 
-<!-- Provide a longer description of the impact of realizing this risk. -->
+**Root Cause:**
 
-# **Risk Assessment:**
+<!-- What was the root cause and contributing factors? -->
+<!-- How does the root cause explain the symptoms? -->
 
-| Risk Ratings | Likelihood     | Consequence     |
-| ------------ | -------------- | --------------- | 
-| Initial      |   |   |
-| Current      |   |   |
-| Target       |   |   |
+**Resolution:**
 
-<!-- Provide initial, current, and target risk rankings in the gaps between the brackets.  Levels include:  0-Nil,1-Very low, 2-Low, 3-Moderate, 4-High, 5-Very High, and Risk Realized -->
-<!-- Risk likelihood ratings are assigned as follows: -->
-<!-- Likelihood |  Safety     |  Technical  |  Cost/Schedule  | -->
-<!-- Very Low   | Ps < 1E-6   | 0.1 - 2%    |  Pcs < 10%      | -->
-<!-- Low        |10^-6 - 10^-3|  2 - 15%    |  10 - 25%       | -->
-<!-- Moderate   |10^-3 - 10^-2| 15 - 25%    |  25 - 50%       | -->
-<!-- High       | 0.01 - 0.1  | 25 - 50%    |  50 - 75%       | -->
-<!-- Very High  | Ps > 0.1    | Pt> 50%     | Pcs > 75%       | -->
+<!-- How was the issue corrected? -->
+<!-- For hardware issues, what is the disposition of the hardware?  Use as-is / rework (to return to near new condition) / repair (to restore functionality but with drop in performance) / scrap -->
+<!-- What are the expected outcomes/improvements? -->
+<!-- Are there any follow-ups/unresolved questions? -->
 
-<!-- Risk consequences rating should be based on the following guidelines: -->
-<!-- Consequence | Safety            | Technical              | Cost                           | Schedule                  | -->
-<!-- ....................................................................................................................... -->
-<!-- Very Low    | negligible impact | negligible impact      | Cost overrun <1% of allocation | Neglible schedule slip    | -->
-<!-- ....................................................................................................................... -->
-<!-- Low         | Minor injury, no  | All reqs met, decrease | Cost overrun 1-3% of allocation| Schedule slip to affected | -->
-<!--             | lost work time    | in capabilities/margin |                                | item; no slip to critical path | -->
-<!-- ....................................................................................................................... -->
-<!-- Moderate    | Injury with lost  | Major loss of instrument | Cost overrun 3-10% of        | Schedule slip affecting   | -->
-<!--             | work time         | capability               | allocation                   | critical path, not launch | -->
-<!-- ....................................................................................................................... -->
-<!-- High        | Severe injury     | Loss of 1 or more Level-1| Cost overrun 10-20% of       | Critical path schedule    | -->
-<!--             |                   | science requirements     | allocation                   | slip of 1-3 months        | -->
-<!-- ....................................................................................................................... -->
-<!-- Very High   | Death or permanently| Loss of instrument, S/C, | Cost overrun >20% of       | Critical path schedule    | -->
-<!--             | disabling injury    | or payload               | allocation                 | slip of >3 months         | -->
-<!--  ...................................................................................................................... -->
+**Recurrence Prevention:**
 
-**Initial Risk Notes:**
+<!-- Do we expect this issue to manifest itself in other parts of the instrument/operations? -->
+<!-- How can this problem be prevented in future? -->
 
-<!-- Capture initial notes on the risk and its current state at the time of risk creation. -->
 
-**Risk Notes/Updates:**
-
-<!-- Put notes here as updates are made.  Preface each note with the date. -->
-
-# **Cost Impacts:**
-**Estimated cost if risk is realized:**
-
-**Explanation for cost risk:**
-
-# **Risk mitigation list:**
-
-<!-- Create as many mitigations as needed by typing in the mitigations after the [ ].  Once the risk is created, we can generate separate issues for each of these mitigations.  This risk form will serve as the place for tracking the completion of mitigations. If a mitigation issue is closed, a green checkmark should appear next to that item.  You can also mark an issue as closed by putting an X between the two brackets. -->  
-
-- [ ]
-
-- [ ] 
-
-- [ ] 
-
-- [ ]
